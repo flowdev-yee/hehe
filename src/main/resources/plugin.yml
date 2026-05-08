@@ -1,20 +1,12 @@
-main: ${PACKAGE}.${NAME}
-name: ${NAME}
-version: "${VERSION}"
+name: JennyEntity
+version: "1.0.0"
+main: com.crimsonwarpedcraft.jenny.JennyEntity
 api-version: "1.21.11"
-author: AUTHOR
-description: DESCRIPTION
+author: fapdev
+description: OG Jenny Mod port to Paper - Payment system + Bed-finding
+
 commands:
-  ex:
-    description: Base command for EXAMPLE
-    usage: "For a list of commands, type /ex help"
-    aliases: example
-permissions:
-  example.test:
-    description: DESCRIPTION
-    default: true
-  example.*:
-    description: Grants all other permissions
-    default: false
-    children:
-      example.test: true
+  jenny:
+    description: Jenny control command
+    usage: /jenny <spawn|remove|here|follow|stop|bed>
+    aliases: [j]
